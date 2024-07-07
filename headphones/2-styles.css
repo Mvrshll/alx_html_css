@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.background-image{
+    background-image:url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:800px;
+    
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.menu-icon{
+    display: none;
+}
+
+nav {
+    display: flex;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    color: white;
+    display: flex;
+}
+nav ul li{
+    margin-right: 30px;
+}
+nav ul li a:hover{
+    color: #FF6565;
+}
+.first{
+    text-align: center;
+    margin-top: 300px;
+    font-weight: 700;
+    line-height: 40.22px;
+    font-size: 32px;
+    font-family: Source Sans Pro;
+    color: #ffffff;
+}
+.second{
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.11px;
+    text-align: center;
+    color: #ffffff;
+}
+button{
+    background-color: #FF6565;
+    color: white;
+    width: 162px;
+    height: 44px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.third{
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 80px;
+}
+.about{
+    background-color: #ffffff;
+    height: 800px;
+}
+h1.four{
+    text-align: center;
+    font-size: 32px;
+    line-height: 37.5px;
+    font-family: Source Sans Pro;
+    color: #071629;
+    padding-top: 100px;
+}
+.five{
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #071629;
+    margin-top: 50px;
+}
+.row h1 p{
+    color: #071629;
+}
+.icons{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.row h1{
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    
+}
+.row p{
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+.row{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+.row img{
+    margin-bottom: 50px;
+    height: 60px;
+}
+.description{
+    background-image: url(images/headphones_hero_2.jpg);
+    height: 650px;
+    overflow-y: auto;
+}
+.results{
+    font-family: Source Sans Pro;
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 130px;
+}
+.lorem{
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+}
+.polygon-icons{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    
+}
+.polygons{
+    position: relative;
+    display: inline-block;
+}
+.text-overlay{
+    position: absolute;
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+}
+.top-text{
+    top:40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bottom-text{
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    left: 20%;
+    top: 70%;
+}
+@media (max-width:767px){
+    .icons{
+        flex-wrap: wrap;
+    }
+    .description{
+        margin-top: 160px;
+    }
+    .polygon-icons{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:600px) {
+    header{
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .logo{
+        text-align: center;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-menu.show{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+    .nav-menu ul{
+        flex-direction: column;
+    }
+    .icons{
+        flex-wrap: wrap;
+    }
+}
